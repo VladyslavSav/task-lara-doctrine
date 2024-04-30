@@ -14,8 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/greeting', function () {
-    return 'Hello World';
-});
 Route::post('/create', [\App\Http\Controllers\Api\BookController::class, 'create']);
 Route::get('/list', [\App\Http\Controllers\Api\BookController::class, 'listPaginated']);
